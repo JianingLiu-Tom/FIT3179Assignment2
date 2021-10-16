@@ -1,4 +1,4 @@
-Country,Year,Status,Life expectancy ,Adult Mortality,infant deaths,Alcohol,GNI,HDI
+Country,Year,Status,Life expectancy,Adult Mortality,infant deaths,Alcohol,GNI,HDI
 United States,2015,Developed,79.3,13,23,,18696014000000,0.92
 United States,2014,Developed,79.1,14,23,8.82,18054959000000,0.918
 United States,2013,Developed,78.9,16,23,8.82,17172525000000,0.916
