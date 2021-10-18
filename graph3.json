@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": ["15 countries's Life_expectancy from 2000 to 2015"],
+  "description": "15countries's Life_expectancy with year",
+  "width": 600,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/life_exp_clean.csv"
+  },
+  "encoding": {"x": {"field": "Year", "type": "temporal"}},
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "y": {
+          "field": "Life_expectancy",
+          "type": "quantitative",
+          "scale": {"domain": [60, 90]}
+        },
+        "color": {"field": "Country", "type": "nominal"}
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "index",
+          "select": {
+            "type": "point",
+            "encodings": ["x"],
+            "on": "mousemove",
+            "nearest": true
+          }
+        }
+      ],
+      "mark": {"type": "point"},
+      "encoding": {
+        "y": {"field": "Life_expectancy", "type": "quantitative"},
+        "opacity": {"value": 0}
+      }
+    },
+    {
+      "transform": [{"filter": {"and": ["index.Year", {"param": "index"}]}}],
+      "mark": "rule"
+    },
+    {
+      "transform": [{"filter": {"and": ["index.Year", {"param": "index"}]}}],
+      "mark": "text",
+      "encoding": {
+        "y": {"value": 10},
+        "text": {"field": "Year", "type": "temporal"}
+      }
+    }
+  ],
+  "config": {}
+}

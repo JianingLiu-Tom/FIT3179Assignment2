@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "World GNI vs Life expectamcy By HDI",
+  "autosize": "fit",
+  "width": 1000,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/plot2.csv"
+  },
+  "mark": {"type": "circle"},
+  "transform": [{"filter": "datum.Year == Year_selection"}],
+  "encoding": {
+    "x": {
+      "field": "GNI(Billion)",
+      "type": "quantitative",
+      "title": "GNI(Billion)",
+      "axis": {"tickCount": 8}
+    },
+    "y": {
+      "field": "Life expectancy ",
+      "type": "quantitative",
+      "title": "Life expectancy",
+      "axis": {"tickCount": 8},
+      "scale": {"domain": [50, 100]}
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "legend": {"orient": "left"}
+    },
+    "size": {
+      "field": "HDI",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [0.6, 0.8, 0.9],
+        "range": [300, 700, 1500]
+      },
+      "legend": {"orient": "bottom-right", "format": ".1s"}
+    }
+  },
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 2011,
+      "bind": {
+        "name": "Year Filter",
+        "input": "range",
+        "min": 2011,
+        "max": 2015,
+        "step": 1
+      }
+    }
+  ],
+  "config": {}
+}
