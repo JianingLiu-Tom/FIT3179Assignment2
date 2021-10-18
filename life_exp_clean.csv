@@ -1,4 +1,4 @@
-Country,Year,Status,Life expectancy ,Adult Mortality,infant deaths,Alcohol,percentage expenditure,Hepatitis B,Measles , BMI ,under-five deaths ,Polio,Total expenditure,Diphtheria , HIV/AIDS,GDP,Population, thinness  1-19 years, thinness 5-9 years,Income composition of resources,Schooling
+Country,Year,Status,Life expectancy,Adult Mortality,infant deaths,Alcohol,percentage expenditure,Hepatitis B,Measles , BMI ,under-five deaths ,Polio,Total expenditure,Diphtheria , HIV/AIDS,GDP,Population, thinness  1-19 years, thinness 5-9 years,Income composition of resources,Schooling
 United States of America,2015,Developed,79.3,13,23,,0,92,188,69.6,26,93,,95,0.1,,,0.8,0.6,,
 United States of America,2014,Developed,79.1,14,23,8.82,0,92,667,69.1,27,93,17.14,95,0.1,,,0.8,0.6,,
 United States of America,2013,Developed,78.9,16,23,8.82,0,91,187,68.6,27,93,16.9,94,0.1,,,0.7,0.6,,
