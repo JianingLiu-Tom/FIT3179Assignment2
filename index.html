@@ -1,16 +1,14 @@
 <!DOCTYPE >
 <html>
-    <head>
-        <title>
-            Assignment2
-        </title>
-        <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
-        <!-- Import vega-embed -->
-        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </head>
+<head>
+    <title>Fit3179 Assignment2</title>
+<!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+<!-- Import vega-embed -->
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
     <body>
         <div class="container">
         <h1 class = "display-2 fw-bold text-center">Title</h1>
@@ -54,18 +52,18 @@
             </div>
           </div>
         </div>
-        <hr id="divide"/>
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-lg-6">
+        <div class="container">
+            <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3">Graph4</h1>
-                    <p class="lead">description graph4</p>
+                    <p class="lead">description graph4</p >
                 </div>
-              <div class="col-10 col-sm-8 col-lg-6">
-                  <article id="graph4"></article>
-              </div>
+        <div class="row flex-lg-row-reverse g-5 py-5">
+
+          <div class="col-7 col-sm-9 col-lg-9">
+              <article id="graph4"></article>
           </div>
-        </div>
+      </div>
+    </div>
         <hr id="divide"/>
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -84,29 +82,29 @@
     </div>
     <hr id="divide"/>
     <script type="text/javascript">
-        var vis1 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/gaph1.json";
+        var gaph1 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/gaph1.json";
         vegaEmbed('#gaph1', gaph1).then(function(result) { 
         }).catch(console.error);
 
-        var vis2 = "./graph2.json";
+        var graph2 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/graph2.json";
         vegaEmbed('#graph2', graph2).then(function(result) { 
         }).catch(console.error);
 
-        var vis3 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/graph3.json";
+        var graph3 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/graph3.json";
         vegaEmbed('#graph3', graph3).then(function(result) { 
         }).catch(console.error);
 
-        var vis4 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/graph4.json";
+        var graph4 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/graph4.json";
         vegaEmbed('#graph4', graph4).then(function(result) { 
         }).catch(console.error);
 
-        var vis5 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/graph5.json";
+        var graph5 = "https://raw.githubusercontent.com/JianingLiu-Tom/FIT3179Assignment2/main/graph5.json";
         vegaEmbed('#graph5', graph5).then(function(result) { 
         }).catch(console.error);
     </script>
 </body>
 <footer class = "text-center">
-    <p>by JianingLiu_29227747 
+    <p>by liujianing 
     </p>
 </footer>
 </html>
